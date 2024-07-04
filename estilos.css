@@ -1,0 +1,100 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; /* Color de fondo general */
+    color: #333; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Fondo de seguridad */
+body {
+    background-image: url('https://www.fonvirtual.com/blog/wp-content/uploads/seguridad-blog.jpg'); /* Ruta a tu imagen de fondo de seguridad */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Para mantener el fondo fijo al hacer scroll */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para la pantalla de encriptación */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilos para los inputs y textarea */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los botones en línea */
+button {
+    padding: 12px 24px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    color: #fff;
+    background-color: #ff69b4; /* Nuevo color rosa para los botones */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #ff1493; /* Color rosa más oscuro al pasar el ratón */
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Botón transparente */
+.transparent-button {
+    background-color: transparent;
+    border: 2px solid #ff69b4; /* Borde rosa */
+    color: #ff69b4; /* Texto rosa */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.transparent-button:hover {
+    background-color: #ff69b4;
+    color: #fff;
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Botón oculto */
+.hidden-button {
+    display: none;
+}
+
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
